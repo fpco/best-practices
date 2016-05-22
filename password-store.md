@@ -15,10 +15,14 @@ Prerequisites
 
 * Install GPG, using the standard method for your OS. This document was written
   using GPG 1.4, but GPG 2.x should work equally well (just replace `gpg` with
-  `gpg2` everywhere).
+  `gpg2` everywhere).  See
+  [this blog post](https://www.fpcomplete.com/blog/2016/05/stack-security-gnupg-keys)
+  for some more information on selecting a version and installing it.
 
 * Create a GPG private key. Follow GPG best practices, such as those from
   [riseup.net](https://help.riseup.net/en/security/message-security/openpgp/best-practices).
+  See [this blog post](https://www.fpcomplete.com/blog/2016/05/stack-security-gnupg-keys)
+  for more detailed instructions on creating a good private key.
 
 * [Download](https://www.passwordstore.org/#download) and install `pass` for
   your operating system. Ensure that you're installing version 1.6.* or higher.
