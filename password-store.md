@@ -44,7 +44,7 @@ Using an existing keystore
 
  3. Change directory to the password store directory.
 
- 4. Get all admins' public keys using `gpg --recv-keys $(cat .gpg-id)`.
+ 4. Get all admins' public keys using `gpg --keyserver pgp.mit.edu --recv-keys $(cat .gpg-id)`. Use a different keyserver if it makes sense in your case.
 
  5. If you have not already done so: verify, sign, and marginally trust at least
     three other admins' keys:
