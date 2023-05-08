@@ -1,7 +1,7 @@
 Password store
 ==============
 
-We keep shared admin secrets in a Git reporitory. We also have separate
+We keep shared admin secrets in a Git repository. We also have separate
 password store Git repositories for some clients. The files in these
 repositories are managed by [pass](https://www.passwordstore.org/).
 
