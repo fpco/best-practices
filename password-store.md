@@ -1,7 +1,7 @@
 Password store
 ==============
 
-We keep shared admin secrets in the a Git reporitory. We also have separate
+We keep shared admin secrets in a Git reporitory. We also have separate
 password store Git repositories for some clients. The files in these
 repositories are managed by [pass](https://www.passwordstore.org/).
 
@@ -95,7 +95,7 @@ To add a new user who can access the shared secrets:
     using `gpg --recv-key <GPG-ID>`).
  2. Verify the fingerprint (`gpg --fingerprint <GPG-ID>`) out-of-band.
  3. Sign the key (`gpg --sign-key <GPG-ID>`).
- 4. Upload the the signature to a keyserver (`gpg --send-key <GPG-ID>`).
+ 4. Upload the signature to a keyserver (`gpg --send-key <GPG-ID>`).
  5. Re-encrypt the password store, adding the new user's key: `pass init $(cat
     .gpg-id) <GPG-ID>`. Be sure to use the "0xlong" keyid format. You probably
     want to be running `gpg-agent`, otherwise you will have to enter your
